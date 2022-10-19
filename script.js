@@ -12,12 +12,12 @@ for(let i = 0; i < Alimenti.length; i++) {
   //console.log(Alimenti[i]);
   console.log(Alimenti.at(i));
 
-  list.innerHTML +=`<li> ${Alimenti[i]} <br>` ;
+  list.innerHTML +=`<li> ${Alimenti[i]} </li>` ;
 }
 
 let i = 0;
 while(i < Alimenti.length){
-  list.innerHTML += `<li> ${Alimenti[i]} <br>`;
+  list.innerHTML += `<li> ${Alimenti[i]} </li>`;
   
   i++;
 }
@@ -26,13 +26,12 @@ let pollice = true;
 let j = 0;
 
 while(pollice){
-  list.innerHTML += `<li> ${Alimenti[j]} <br>`;
+  list.innerHTML += `<li> ${Alimenti[j]} </li>`;
   console.log(j);
-  if(j >= Alimenti.length - 1){
+  if(j === Alimenti.length - 1){
     pollice = false;
-  }else{
-    j++;
   }
+  j++;
 
 } 
 
